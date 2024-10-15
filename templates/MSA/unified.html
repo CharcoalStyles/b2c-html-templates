@@ -92,6 +92,9 @@
       .buttons #cancel:before {
         content: url(https://login.microsoftonline.com/templates/src/images/left-arrow.svg);
       }
+      .background {
+        background-color: #8055F1;
+      }
     </style>
     <style id="idpselector">
       #SignInWithLogonNameExchange,
@@ -1161,11 +1164,8 @@
   <body>
     <div
       id="background_branding_container"
-      data-tenant-branding-background-color="true">
-      <img
-        data-tenant-branding-background="true"
-        src="https://login.microsoftonline.com/templates/src/backgrounds/4-2.png"
-        alt="Illustration" />
+      class="background"
+      data-tenant-branding-background-color="false">
     </div>
     <div class="container unified_container" role="presentation">
       <div class="row">
