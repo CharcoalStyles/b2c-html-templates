@@ -1161,6 +1161,7 @@
       /* endinject */
     </style>
 
+    <!-- this is mainly the outer shell of the unified template and can be completely changes as required -->
     <style>
       .container {
         background-color: #8055f1;
@@ -1171,8 +1172,17 @@
       .panel-body {
         background-color: #fff;
       }
-      .companyLogo {
+      .logo {
         display: none;
+      }
+    </style>
+
+    <!-- This is the inner content and we'll have to work with teh classes we have -->
+    <style>
+      .intro h2 {
+        font: bold;
+        align: center;
+        color: #8055f1;
       }
     </style>
   </head>
@@ -1186,7 +1196,7 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <img
-                class="companyLogo"
+                class="logo"
                 data-tenant-branding-logo="true"
                 src="https://login.microsoftonline.com/templates/src/images/logo.svg"
                 alt="Company Logo" />
