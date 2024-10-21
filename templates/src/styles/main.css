@@ -116,6 +116,11 @@ ul {
   padding: 0;
 }
 
+.unified_container #api {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .unified_container .row .panel-default .panel-body {
   padding-left: 24px;
   padding-right: 24px;
@@ -147,27 +152,6 @@ ul {
   letter-spacing: -2px;
 }
 
-.unified_container .row .panel-default #api .accountButton {
-  border-radius: 999px;
-  border: 1.5px solid #441170;
-  background-color: transparent !important;
-  color: #441170 !important;
-  font-family: 'Public Sans', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 24px;
-  letter-spacing: -0.48px;
-  height: 45px;
-}
-
-.unified_container .row .panel-default #api .accountButton:hover {
-  border-radius: 999px;
-  border: 1.5px solid #441170;
-  background-color: transparent !important;
-  color: #441170 !important;
-}
-
 .unified_container .row .panel-default #api .localAccount .entry .entry-item {
   font-family: 'Public Sans', sans-serif;
   padding-top: 0px;
@@ -175,13 +159,7 @@ ul {
   margin-bottom: 8px;
 }
 
-.unified_container
-  .row
-  .panel-default
-  #api
-  .localAccount
-  .entry
-  .entry-item:nth-child(2) {
+.unified_container .row .panel-default #api .localAccount .entry .entry-item:nth-child(2) {
   margin-bottom: 56px;
 }
 
@@ -238,51 +216,12 @@ input:focus {
   margin-bottom: 0px;
 }
 
-.unified_container
-  .row
-  .panel-default
-  #api
-  .localAccount
-  .entry
-  .entry-item
-  .password-label {
+.unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label {
   height: auto;
 }
 
-.unified_container
-  .row
-  .panel-default
-  #api
-  .localAccount
-  .entry
-  .entry-item
-  #password {
+.unified_container .row .panel-default #api .localAccount .entry .entry-item #password {
   margin-bottom: 32px;
-}
-
-.unified_container
-  .row
-  .panel-default
-  #api
-  .localAccount
-  .entry
-  .entry-item
-  .password-label
-  #forgotPassword {
-  font-family: 'Public Sans', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 24px;
-  /* 150% */
-  letter-spacing: -0.48px;
-  color: #441170;
-  text-align: center;
-  position: absolute;
-  height: 32px;
-  left: 0;
-  right: 0;
-  bottom: -40px;
 }
 
 .unified_container .row .panel-default #api .localAccount .entry .buttons {
@@ -296,7 +235,9 @@ input:focus {
 
 .buttons button,
 .buttons button#continue,
-.buttons button#cancel {
+.buttons button#cancel,
+.claims-provider-list-buttons button,
+#createAccount {
   position: initial;
   text-align: center;
   touch-action: manipulation;
@@ -346,6 +287,75 @@ input:focus {
   color: #fff;
 }
 
+#api .accountButton,
+#api .create #createAccount {
+  border-radius: 999px;
+  border: 1.5px solid #441170;
+  background-color: transparent !important;
+  color: #441170 !important;
+}
+
+#api .create #createAccount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#api .accountButton:hover,
+#api .create #createAccount:hover {
+  border-radius: 999px;
+  border: 1.5px solid #441170;
+  background-color: transparent !important;
+  color: #441170 !important;
+  text-decoration: none !important;
+}
+
+
+#api .create #createAccount {
+  transform: translateY(24px);
+  margin-bottom: 24px;
+}
+
+#api .password-label {
+  position: relative;
+}
+
+#api .password-label #forgotPassword {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.48px;
+  color: #441170;
+  text-align: center;
+  position: absolute;
+  height: 32px;
+  left: 0;
+  right: 0;
+  bottom: -92px;
+}
+
+#api .divider h2 {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-transform: lowercase;
+}
+
+#api .claims-provider-list-buttons.social>.intro {
+  display: none;
+}
+
+#localAccountForm>div:nth-child(4) {
+  display: none;
+}
+
+
 .create {
   width: 100%;
 }
@@ -363,29 +373,4 @@ input:focus {
   line-height: 32px;
   letter-spacing: -1.2px;
   margin-bottom: 0;
-}
-
-.unified_container
-  .row
-  .panel-default
-  #api
-  .localAccount
-  .create
-  #createAccount {
-  display: block;
-  width: 100%;
-  border-radius: 999px !important;
-  color: #441170 !important;
-  border: 1.5px solid #441170;
-  font-family: 'Public Sans', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: 24px;
-  /* 150% */
-  letter-spacing: -0.48px;
-  background-color: #fff !important;
-  height: 45px;
-  transform: translateY(44px);
-  margin-bottom: 56px;
 }
