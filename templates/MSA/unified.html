@@ -900,22 +900,6 @@
       width: 100%;
     }
 
-    @keyframes slideInFromLeft {
-      0% {
-        opacity: 0;
-        transform: translateX(-30%);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    .create {
-      animation: 0.5s ease-out 0s 1 slideInFromLeft;
-    }
-
     .unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label #forgotPassword {
       position: absolute;
       right: 0;
@@ -1141,28 +1125,221 @@
     }
   </style>
 
-  <!-- This is the inner content and we'll have to work with teh classes we have -->
-  <!-- For certain classes, to make them actually useful, we'll have to use !important to override the default styles -->
+
   <style>
-    .localAccount .intro {
-      color: #8055f1;
+    .container {
+      background: white;
     }
 
-    .social .intro {
-      color: #8055f1;
+    .public-sans-light {
+      font-family: 'Public Sans', sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
     }
 
-    .entry .entry-item input {
-      border: 2px #8055f1 solid !important;
-      border-radius: 8px;
+    #api {
+      padding-bottom: 48px;
+    }
+
+    .panel.panel-default {
+      border: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+
+    .unified_container .row .panel-default {
+      padding: 0;
+    }
+
+    .unified_container .row .panel-default .panel-body {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .unified_container .row .panel-default .panel-body img {
+      display: none;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .intro h2,
+    .unified_container .row .panel-default #api .intro h2 {
+      font-family: 'Public Sans', sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: -1.2px;
+      color: #22272b;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .intro h2 {
+      color: #441170;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 32px;
+      letter-spacing: -2px;
+    }
+
+    .unified_container .row .panel-default #api .accountButton {
+      border-radius: 999px;
+      border: 1.5px solid #441170;
+      background-color: transparent !important;
+      color: #441170 !important;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      letter-spacing: -0.48px;
+      height: 45px;
+    }
+
+    .unified_container .row .panel-default #api .accountButton:hover {
+      border-radius: 999px;
+      border: 1.5px solid #441170;
+      background-color: transparent !important;
+      color: #441170 !important;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item {
+      font-family: 'Public Sans', sans-serif;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-bottom: 8px;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item:nth-child(2) {
+      margin-bottom: 56px;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item label {
+      display: block;
+      color: #22272b;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      /* 150% */
+      letter-spacing: -0.48px;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item input,
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item #password {
+      position: initial;
+      display: flex;
+      height: 48px;
+      border-radius: 4px;
+      background: #fff;
+      border: 1px solid #cdd3d6 !important;
+      padding-left: 12px;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      /* 150% */
+      letter-spacing: -0.48px;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item input:focus,
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item #password:focus {
+      border: 2px solid #441170 !important;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label {
+      height: auto;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item #password {
+      margin-bottom: 32px;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label #forgotPassword {
+      font-family: 'Public Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      /* 150% */
+      letter-spacing: -0.48px;
+      color: #441170;
+      text-align: center;
+      position: absolute;
+      height: 32px;
+      left: 0;
+      right: 0;
+      bottom: -40px;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .buttons {
+      margin: 0;
+      display: flex;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .entry .buttons button {
+      float: initial;
+      margin-top: 0;
+      display: block;
+      width: 100%;
+      border-radius: 999px !important;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      /* 150% */
+      letter-spacing: -0.48px;
+      background-color: #441170 !important;
+    }
+
+    .create {
       width: 100%;
     }
 
-    .buttons button {
-      background-color: #8055f1 !important;
-      border-radius: 8px !important;
+    .unified_container .row .panel-default #api .localAccount .create p {
+      margin-top: 24px;
+      width: 100%;
+      color: #22272b;
+      text-align: left;
+      position: relative;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 32px;
+      letter-spacing: -1.2px;
+      margin-bottom: 0;
+    }
+
+    .unified_container .row .panel-default #api .localAccount .create #createAccount {
+      display: block;
+      width: 100%;
+      border-radius: 999px !important;
+      color: #441170 !important;
+      border: 1.5px solid #441170;
+      font-family: 'Public Sans', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      /* 150% */
+      letter-spacing: -0.48px;
+      background-color: #fff !important;
+      height: 45px;
+      transform: translateY(44px);
+      margin-bottom: 56px;
     }
   </style>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
