@@ -1,0 +1,391 @@
+html {
+  background: 0 0;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-attachment: fixed;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  display: table;
+  height: 100vh;
+  padding: 0;
+  background: white;
+}
+
+a:focus {
+  outline: 0;
+}
+
+select {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+select:focus {
+  text-shadow: 0 0 0 #000;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid #1662c7;
+}
+
+select:-moz-focusring {
+  color: transparent;
+}
+
+img[data-tenant-branding-background='true'] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+div[data-tenant-branding-background-color='true'] {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+#api {
+  margin: 0 auto;
+}
+
+.heading h1 {
+  margin-bottom: 20px;
+}
+
+.col-lg-6 {
+  max-width: 470px;
+  width: 100%;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+.row {
+  width: 100%;
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  background: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.public-sans-light {
+  font-family: 'Public Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+#api {
+  padding-bottom: 24px;
+}
+
+.panel.panel-default {
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.unified_container .row .panel-default {
+  padding: 0;
+}
+
+.unified_container .row .panel-default .panel-body {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.self_asserted_container .row .panel-default .panel-body img.companyLogo,
+.unified_container .row .panel-default .panel-body img {
+  display: none;
+}
+
+.unified_container .row .panel-default #api .localAccount .intro h2,
+.unified_container .row .panel-default #api .intro h2 {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 32px;
+  letter-spacing: -1.2px;
+  color: #22272b;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.unified_container .row .panel-default #api .localAccount .intro h2 {
+  color: #441170;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 32px;
+  letter-spacing: -2px;
+}
+
+.unified_container .row .panel-default #api .accountButton {
+  border-radius: 999px;
+  border: 1.5px solid #441170;
+  background-color: transparent !important;
+  color: #441170 !important;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  height: 45px;
+}
+
+.unified_container .row .panel-default #api .accountButton:hover {
+  border-radius: 999px;
+  border: 1.5px solid #441170;
+  background-color: transparent !important;
+  color: #441170 !important;
+}
+
+.unified_container .row .panel-default #api .localAccount .entry .entry-item {
+  font-family: 'Public Sans', sans-serif;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+.unified_container
+  .row
+  .panel-default
+  #api
+  .localAccount
+  .entry
+  .entry-item:nth-child(2) {
+  margin-bottom: 56px;
+}
+
+label {
+  display: block;
+  color: #22272b;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.48px;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.error {
+  margin-top: 0 !important;
+}
+
+.error.show {
+  margin-bottom: 5px !important;
+}
+
+.helpLink {
+  display: none;
+}
+
+input {
+  position: initial;
+  width: 100%;
+  display: flex;
+  height: 48px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #cdd3d6 !important;
+  padding-left: 12px;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  outline: 0;
+  margin-bottom: 24px;
+}
+
+input:focus {
+  border: 2px solid #441170 !important;
+}
+
+#attributeList ul li {
+  margin-bottom: 0px;
+}
+
+.unified_container
+  .row
+  .panel-default
+  #api
+  .localAccount
+  .entry
+  .entry-item
+  .password-label {
+  height: auto;
+}
+
+.unified_container
+  .row
+  .panel-default
+  #api
+  .localAccount
+  .entry
+  .entry-item
+  #password {
+  margin-bottom: 32px;
+}
+
+.unified_container
+  .row
+  .panel-default
+  #api
+  .localAccount
+  .entry
+  .entry-item
+  .password-label
+  #forgotPassword {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.48px;
+  color: #441170;
+  text-align: center;
+  position: absolute;
+  height: 32px;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+}
+
+.unified_container .row .panel-default #api .localAccount .entry .buttons {
+  margin: 0;
+  display: flex;
+}
+
+.buttons {
+  margin-bottom: 24px;
+}
+
+.buttons button,
+.buttons button#continue,
+.buttons button#cancel {
+  position: initial;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: inherit;
+  -moz-user-select: none;
+  -ms-touch-action: manipulation;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  float: initial;
+  margin-top: 0;
+  display: block;
+  width: 100%;
+  border-radius: 999px !important;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.48px;
+  background-color: #441170 !important;
+  outline: 0;
+  border: 0;
+  height: 45px;
+  color: white;
+}
+
+.buttons button#cancel {
+  margin-top: 8px;
+  border: 1.5px solid #441170 !important;
+  color: #441170 !important;
+  background-color: #fff !important;
+}
+
+.buttons #cancel:before {
+  display: none;
+}
+
+.buttons button:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #0058ad;
+  color: #fff;
+}
+
+.create {
+  width: 100%;
+}
+
+.unified_container .row .panel-default #api .localAccount .create p {
+  margin-top: 24px;
+  width: 100%;
+  color: #22272b;
+  text-align: left;
+  position: relative;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 32px;
+  letter-spacing: -1.2px;
+  margin-bottom: 0;
+}
+
+.unified_container
+  .row
+  .panel-default
+  #api
+  .localAccount
+  .create
+  #createAccount {
+  display: block;
+  width: 100%;
+  border-radius: 999px !important;
+  color: #441170 !important;
+  border: 1.5px solid #441170;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.48px;
+  background-color: #fff !important;
+  height: 45px;
+  transform: translateY(44px);
+  margin-bottom: 56px;
+}
