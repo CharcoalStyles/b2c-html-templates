@@ -131,7 +131,6 @@ ul {
   display: none;
 }
 
-.unified_container .row .panel-default #api .localAccount .intro h2,
 .unified_container .row .panel-default #api .intro h2 {
   font-family: 'Public Sans', sans-serif;
   font-size: 24px;
@@ -142,14 +141,6 @@ ul {
   color: #22272b;
   margin-top: 24px;
   margin-bottom: 16px;
-}
-
-.unified_container .row .panel-default #api .localAccount .intro h2 {
-  color: #441170;
-  font-size: 32px;
-  line-height: 38px;
-  margin-bottom: 32px;
-  letter-spacing: -2px;
 }
 
 .unified_container .row .panel-default #api .localAccount .entry .entry-item {
@@ -353,6 +344,22 @@ input:focus {
 
 #localAccountForm>div:nth-child(4) {
   display: none;
+}
+
+#localAccountForm>.intro {
+  display: none;
+}
+
+.page-title {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 32px;
+  letter-spacing: -1.2px;
+  color: #22272b;
+  margin-top: 24px;
+  margin-bottom: 16px;
 }
 
 
