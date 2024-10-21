@@ -78,7 +78,6 @@ div[data-tenant-branding-background-color='true'] {
 
 .row {
   width: 100%;
-  margin: 0;
   display: table-cell;
   vertical-align: middle;
 }
@@ -151,7 +150,7 @@ ul {
 }
 
 .unified_container .row .panel-default #api .localAccount .entry .entry-item:nth-child(2) {
-  margin-bottom: 56px;
+  margin-bottom: 64px;
 }
 
 label {
@@ -170,10 +169,16 @@ label {
 
 .error {
   margin-top: 0 !important;
+  text-align: left;
 }
 
 .error.show {
   margin-bottom: 5px !important;
+}
+
+.error p {
+  color: #B81237;
+  margin-bottom: 5px;
 }
 
 .helpLink {
@@ -233,9 +238,8 @@ input:focus {
   text-align: center;
   touch-action: manipulation;
   user-select: none;
-  vertical-align: middle;
   white-space: nowrap;
-  width: inherit;
+  width: 100%;
   -moz-user-select: none;
   -ms-touch-action: manipulation;
   -ms-user-select: none;
@@ -243,7 +247,6 @@ input:focus {
   float: initial;
   margin-top: 0;
   display: block;
-  width: 100%;
   border-radius: 999px !important;
   font-family: 'Public Sans', sans-serif;
   font-size: 16px;
@@ -307,7 +310,7 @@ input:focus {
   margin-bottom: 24px;
 }
 
-#api .password-label {
+#api #localAccountForm>div:nth-child(3)>div:nth-child(2) {
   position: relative;
 }
 
@@ -325,7 +328,17 @@ input:focus {
   height: 32px;
   left: 0;
   right: 0;
-  bottom: -92px;
+  bottom: -48px;
+}
+
+#api .divider {
+  margin: 0 auto;
+  margin-top: 36px;
+  border-top: 1px solid #22272B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
 }
 
 #api .divider h2 {
@@ -333,9 +346,11 @@ input:focus {
   font-size: 16px;
   font-style: normal;
   font-weight: 200;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: -9px;
+  margin-bottom: 27px;
   text-transform: lowercase;
+  background-color: white;
+  width: 64px;
 }
 
 #api .claims-provider-list-buttons.social>.intro {
@@ -350,16 +365,22 @@ input:focus {
   display: none;
 }
 
+.self_asserted_container #api>.intro,
+.verificationInfoText {
+  display: none !important;
+}
+
 .page-title {
   font-family: 'Public Sans', sans-serif;
-  font-size: 24px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 200;
-  line-height: 32px;
+  line-height: 48px;
   letter-spacing: -1.2px;
-  color: #22272b;
-  margin-top: 24px;
-  margin-bottom: 16px;
+  color: #441170;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  text-align: left;
 }
 
 
