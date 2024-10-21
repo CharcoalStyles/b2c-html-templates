@@ -9,18 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <style id="common">
-    @font-face {
-      font-family: "SegoeUI";
-      src: url(https://login.microsoftonline.com/templates/src/fonts/segoeui.WOFF);
-      font-weight: normal;
-    }
-
-    @font-face {
-      font-family: "SegoeUI";
-      src: url(https://login.microsoftonline.com/templates/src/fonts/segoeui_bold.WOFF);
-      font-weight: bold;
-    }
-
     #AmazonExchange {
       background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/amazon.svg);
     }
@@ -110,14 +98,6 @@
     #WeiboExchange:hover {
       background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/white/weibo.svg);
     }
-
-    .buttons #cancel:before {
-      content: url(https://login.microsoftonline.com/templates/src/images/left-arrow.svg);
-    }
-
-    .background {
-      background-color: #8055f1;
-    }
   </style>
   <style id="idpselector">
     #SignInWithLogonNameExchange,
@@ -152,8 +132,7 @@
     }
 
     body {
-      font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial,
-        sans-serif;
+      font-family: 'Public Sans', sans-serif;
       background-attachment: fixed;
       background-color: #fff;
       background-position: center;
@@ -312,88 +291,8 @@
     #WeiboExchange:hover {
       background-color: #e81123 !important;
     }
-
-    #attributeList ul {
-      padding: 0;
-    }
-
-    #attributeList ul li {
-      list-style: none;
-      margin: 1rem 0;
-    }
-
-    @media screen and (-ms-high-contrast: active) {
-
-      #attributeList ul li .attrEntry .verify button,
-      .buttons #continue {
-        border: 1px dashed #fff !important;
-      }
-
-      #attributeList ul li .attrEntry .verify button:hover,
-      .buttons #continue:hover {
-        border: 1px solid #fff !important;
-      }
-    }
-
-    #api .working {
-      background: url(data:image/gif;base64,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) no-repeat;
-      height: 30px;
-      width: auto;
-      background-position: center bottom;
-    }
-
-    @media screen and (max-width: 100%) {
-      .row .panel-default .panel-body {
-        margin-top: 40px;
-      }
-
-      .row .panel-default .panel-body .branding img {
-        display: block;
-        height: 80px;
-        width: auto;
-        margin: 0 auto;
-      }
-
-      .row .panel-default .panel-body .branding h1 {
-        display: none;
-      }
-
-      .row .panel-default .panel-body h3 {
-        font-size: 1.5em;
-        margin-top: 15px;
-      }
-    }
-
-    .panel,
-    .panel_layout,
-    .panel_layout_row,
-    body,
-    html {
-      height: 100%;
-    }
-
-    @media only screen and (max-width: 600px) {
-      img[data-tenant-branding-background="true"] {
-        display: none;
-      }
-
-      .container {
-        background-color: #fff;
-      }
-
-      .container .row .panel-default {
-        border-radius: 0;
-        border: none;
-        box-shadow: none;
-      }
-    }
-
-    /* endinject */
   </style>
-
-  <style>
-    /* Following are generated styles via gulp. */
-    /* inject: css */
+  <!-- <style>
     .unified_container .row .panel-default {
       margin-top: auto;
       margin-bottom: auto;
@@ -708,7 +607,7 @@
     }
 
     /* endinject */
-  </style>
+  </style> -->
   <style>
     .container {
       background: white;
